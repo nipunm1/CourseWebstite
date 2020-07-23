@@ -6,20 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="includes/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="includes/css/style.css">
-        <script src="includes/bootstrap/fontawesome.js"></script>   
+        <script src="includes/bootstrap/fontawesome.js"></script>
+        <style>
+            table {
+                table-layout: fixed ;
+                width: 100% ;
+            }
+            th{
+                width: 25% ;   
+                font-weight: 1000;
+                font-size:larger;
+            }
+            td {
+                width: 25% ;
+                font-weight: 1000;
+                font-size:larger;
+            }
+        </style>   
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
-                <a class="navbar-brand" href="#home">
-                    Home
-                </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#home">
+                        Home
+                    </a>
+                </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="#about">About</a>
                   </li>
@@ -32,12 +50,12 @@
                 <!--li class="nav-item">
                     <a class="nav-link" href="#rules">Rules</a>
                   </li-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#faqs">FAQs</a>
                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#schedule">Schedule</a>
-                  </li> 
                 <li class="nav-item">
                     <a class="nav-link" href="#team">Co-ordinating Team</a>
                  </li>
@@ -57,7 +75,7 @@
                 
                 <p class="Heading black">Full Stack Development</p>
                 <hr class="my-4">
-                <a href="" class="btn btn-primary">Register Now</a>
+                <a href="https://forms.gle/REbixhJctCrXoehz7" class="btn btn-info" style="font-size: 30px;">Register Now</a>
                 <!-- <button target="_blank" id="devfolio-apply-now"><svg class="logo"
                                         xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46"
                                         style="height:24px;width:24px;margin-right:8px">
@@ -81,12 +99,15 @@
                 <div class="what_h1">
               <h1 style="margin-left:20%;"><strong>What is Professional Training Programme?</strong></h1>  </div>  
               <br><br>
-              <div class="content"><p style="margin-left:20%;">
-                Bharati Vidyapeeth's Institute of Computer Application and Management (BVICAM) certified Professional Training Programme aims to provide Live Online Course on Full Stack Development.</p><p style="margin-left:20%;">
-                    Providing both front-end (UI/UX) and back-end (Server Side) using various technologies such as MongoDB, ExpressJS, ReactJS, NodeJS and more.
-                    </p> 
-                 <p style="margin-left:20%;">
-                    By combining programming languages, technology tools, Test Automation and DevOps you can become a Full Stack Developer who can create, deploy, integrate, optimize, and automate end-to-end Web applications.
+              <div class="content">
+				<p style="margin-left:20%; font-size:18px">
+					Bharati Vidyapeeth's Institute of Computer Application and Management (BVICAM, Delhi) proudly announces an elite <b style="color:orange">Professional Training Programme</b> that aims to upskill the developer in you with the latest technology trends by providing a <br><b style="color:orange">Live Online Course on Full Stack Development using MERN.</b>
+				</p>
+				<p style="margin-left:20%;font-size:18px">
+                    It helps you broaden your horizons by gaining the knowledge of what the industry needs.
+                </p> 
+                <p style="margin-left:20%;font-size:18px">
+                    Conducted under the supervision of a <b style="color:orange">highly qualified mentor with 15+ years of experience</b>, the programme ensures that you become a Full Stack Developer who can create, deploy, integrate, optimize, and automate end-to-end Web Applications.
                 </p>
                 <!-- <a class="link" href="https://devfolio.co/code-of-conduct" target="_blank">Code of Conduct</a> -->
                 </div>
@@ -103,17 +124,21 @@
                 </strong>
                 <span class="verticalLine">
                     <span style="color: rgb(231, 15, 0); padding-left: 2%;">
-                        Early Bird Registration: <i class="fa fa-inr" style="color:white;">700</i>
+                        Registration Fee: <i class="fa fa-inr" style="color:white;">1000</i>
                     </span>
                     <strong>
                         <br>
-						<p style="color: rgb(231, 15, 0); padding-left: 44%; font-size:50%">(Valid till 31st July,2020)</p>
+                        <p style="color:  rgb(231, 15, 0); padding-left: 55%; font-size:50%; margin-top: 4px;">(Valid till 6th August,2020)</p>
                     </strong>
                 </span>
-                <br><br>
+                <br>
                 <span style="color: #E7A500; padding-left: 5%;">
-                    Normal Registration Fee: <i class="fa fa-inr" style="color:white;">1000</i>
+                    Early Bird Registration: <i class="fa fa-inr" style="color:white;">700</i>
                 </span>
+                <strong>
+                    <br>
+                    <p style="color: #E7A500; padding-left: 2%; font-size:50%; margin-top: 4px;">(Valid till 31st July,2020)</p>
+                </strong>
             </h1>
        </div>
      
@@ -304,44 +329,49 @@
     </div>
 </div> -->
 
-<marquee width="100%" direction="left" scrollamount = "10">
+<marquee width="100%" direction="left" scrollamount = "20">
         <div class="form-group">
             <div class="row">
-            <figure style="margin-right:50px ;">
+            <figure style="margin-right:10px ;">
                 <img src="includes/images/Technologies/html.png" height="100px" style="margin-top: 70px;"/>  
                 <figcaption style="color: white; padding: 29px; margin-top: 5px;">HTML</figcaption>
             </figure>
-            <figure style="margin-right:50px;">
+            <figure style="margin-right:10px;">
                 <img src="includes/images/Technologies/css.png" height="100px" style="margin-top: 70px;"/>  
                 <figcaption style="color: white; padding: 35px; margin-bottom: 20px;">CSS</figcaption>
             </figure>
-            <figure style="margin-right:50px ;">
+            <figure style="margin-right:10px ;">
                 <img src="includes/images/Technologies/bootstrap.png" height="100px" style="margin-top: 70px;"/>  
                 <figcaption style="color: white; padding: 17px; margin-top:16px ;">Bootstrap</figcaption>
             </figure>
-            <figure style="margin-right:50px ;">
+            <figure style="margin-right:10px ;">
                 <img src="includes/images/Technologies/javascript.png" height="100px" style="margin-top: 70px;"/>  
                 <figcaption style="color: white; padding: 17px; margin-top:16px ;">Javascript</figcaption>
             </figure>
-            <figure style="margin-right:50px ;">
-                <img src="includes/images/Technologies/reactjs.png" height="100px" style="margin-top: 70px;"/>  
-                <figcaption style="color: white; padding: 22px; margin-top:16px ;">React JS</figcaption>
-            </figure>
-            <figure style="margin-right:50px ;">
-                <img src="includes/images/Technologies/nodejs.png" height="100px" style="margin-top: 70px;"/>  
-                <figcaption style="color: white; padding: 19px; margin-top:16px ;">Node JS</figcaption>
-            </figure>
-            <figure style="margin-right:50px ;">
+			<figure style="margin-right:10px ;">
                 <img src="includes/images/Technologies/mongo.png" height="100px" style="margin-top: 70px;"/>  
                 <figcaption style="color: white; padding: 15px; margin-top:16px ;">Mongo DB</figcaption>
             </figure>
-            <figure style="margin-right:50px ;">
+			<figure style="margin-right:10px ;">
+                <img src="includes/images/Technologies/Express.png" height="100px" style="margin-top: 70px;"/>  
+                <figcaption style="color: white; padding: 22px; margin-top:9px ;">Express JS</figcaption>
+            </figure>
+            <figure style="margin-right:10px ;">
+                <img src="includes/images/Technologies/reactjs.png" height="100px" style="margin-top: 70px;"/>  
+                <figcaption style="color: white; padding: 22px; margin-top:16px ;">React JS</figcaption>
+            </figure>
+            <figure style="margin-right:10px ;">
+                <img src="includes/images/Technologies/nodejs.png" height="100px" style="margin-top: 70px;"/>  
+                <figcaption style="color: white; padding: 19px; margin-top:16px ;">Node JS</figcaption>
+            </figure>
+            <figure style="margin-right:10px ;">
                 <img src="includes/images/Technologies/git.png" height="100px" style="margin-top: 70px;"/>  
                 <figcaption style="color: white; padding: 38px;margin-bottom:25px;">Git</figcaption>
             </figure>
         </div>
-    </div>
-</marquee>  
+    </div>	
+</marquee>
+
             </div>
         </div>
     </div>
@@ -361,39 +391,46 @@
                 <ul>
 				<li>
                     <div  class="container bg-dark " style="color: #7CBA01; ">
-                    <strong style="padding-left:2%; font-size:1.5em;">
-                     <i class="fas fa-book-reader" style="padding-right: 2%;"></i>PROVIDING INTERNSHIP OPPORTUNITIES </strong>
+                    <strong style="padding-left:2%; font-size:1.4em;">
+                        <i class="fas fa-laptop-code" style="padding-right: 2%;"></i>LIVE ONLINE CLASSES</strong>
                     </div>
                   </li>
                   <li>
                     <div class="container bg-dark" style="color: #1EBAD0; ">
-                      <strong style="padding-left:2%; font-size:1.5em; ">
-                        <i class="fa fa-certificate" style="padding-right:2%;"></i>PROVIDING CERTIFICATE</strong>
+                      <strong style="padding-left:2%; font-size:1.4em; ">
+                        <i class="fa fa-hand-paper-o" style="padding-right:2%;"></i>LEADING TO EASY CLEARANCE OF DOUBTS</strong>
                     </div>
                   </li>
                   <li>
                     <div  class="container bg-dark" style="color: #7CBA01 ">
-                      <strong style="padding-left:2%; font-size:1.5em; ">
-                        <i class="fas fa-laptop-code" style="padding-right:2%;"></i>LIVE ONLINE COURSE </strong>
+                      <strong style="padding-left:2%; font-size:1.4em; ">
+                        
+                        <i class="fa fa-user" style="padding-right:2%;"></i>BY INDUSTRY TRAINED MENTOR HAVING 15+ YEARS OF EXPIERENCE</strong>
                     </div>
                   </li>
                   <li>
                     <div  class="container bg-dark" style="color: #1EBAD0 ">
-                      <strong style="padding-left:2%; font-size:1.5em; ">
-                        <i class="fa fa-hand-paper-o" style="padding-right:2%;"></i>EASY DOUBT CLEARANCE 
+                      <strong style="padding-left:2%; font-size:1.4em; ">
+                        <i class="fas fa-book-reader" style="padding-right:2%;"></i>ALREADY TAUGHT MORE THAN 1 LAKH STUDENTS 
                     </strong>
                     </div>
                   </li>
                   <li>
                     <div class="container bg-dark" style="color: #7CBA01 ">
-                      <strong style="padding-left:2%; font-size:1.5em; ">
-                        <i class="fa fa-user" style="padding-right:2%;"></i>INDUSTRY TRAINED MENTORS</strong>
+                      <strong style="padding-left:2%; font-size:1.4em; ">
+                        <i class="fa fa-code" style="padding-right:2%;"></i>LEARNING THROUGH ONLINE PROJECT</strong>
                     </div>
                   </li>
                   <li>
                     <div class="container bg-dark  " style="color: #1EBAD0; ">
-                      <strong style="padding-left:2%; font-size:1.5em; ">
-                        <i class="fa fa-code" style="padding-right:2%;"></i>LEARN PROJECTS ONLINE</strong>
+                      <strong style="padding-left:2%; font-size:1.4em; ">
+                        <i class="fa fa-certificate" style="padding-right:2%;"></i>EARN A CERTIFICATE</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container bg-dark" style="color: #7CBA01 ">
+                      <strong style="padding-left:2%; font-size:1.4em; ">
+                        <i class="fa fa-user" style="padding-right:2%;"></i>INTERSHIP OPPORTUNITIES FOR BEST STUDENTS</strong>
                     </div>
                   </li>
                 </ul>
@@ -423,83 +460,198 @@
                 <li class="list-group-item bg-dark"><i class="fas fa-chevron-circle-right" style="padding:1%; color:white"></i> Coordinators reserve the right to change rules at any point of time without prior information/consultance </li>
             </ul>
         </div-->
+        
+        <!-- Schedule -->
+       <a name="schedule"></a>
+       <div style="background-color: #FFFFF; margin-top: 2%;">
+            <div class="container sponsors">
+                <!-- <a name="technologies"></a> -->
+				<div class="theme_h1"><br><br>
+              <h1><strong>Schedule</strong></h1> </div> <br><br>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th style="color:#E7A500; text-align: center;">TOPIC</th>
+                    <th style="color:#E7A500; text-align: center">DATE & DAY</th>
+                    <th style="color:#E7A500; text-align: center">TIME</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Orientation</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, August 8, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Basic HTML, CSS, Javascript & Setup</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, August 8, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">JavaScript</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, August 9, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">JavaScript</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, August 9, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Ajax</td>
+                    <td style="color:#7FFF00; text-align: center">Sunday, August 16, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">HTML & CSS</td>
+                    <td style="color:#7FFF00; text-align: center">Sunday, August 16, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Bootstrap & Flex</td>
+                    <td style="color:#00FFFF; text-align: center">Monday, August 17, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">5:30pm - 7:30pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">React JS</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, August 22, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">React JS</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, August 22, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Node JS</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, August 23, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Node JS</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, August 23, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Express JS</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, August 29, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Express JS</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, August 29, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Mongo DB</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, August 30, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Mongo DB</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, August 30, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Git</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, September 5, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Project</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, September 5, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Project</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, September 6, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#00FFFF; text-align: center">Project</td>
+                    <td style="color:#00FFFF; text-align: center">Sunday, September 6, 2020</td>
+                    <td style="color:#00FFFF; text-align: center">2:00pm - 4:00pm</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#7FFF00; text-align: center">Doubts</td>
+                    <td style="color:#7FFF00; text-align: center">Saturday, September 12, 2020</td>
+                    <td style="color:#7FFF00; text-align: center">11:00am - 1:00pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+				
+                <!-- </div> -->
+            </div>
+       </div>    
+       <br><br><br><br><br>
        <!-- FAQ -->
        <div class="container">
             <a name="faqs"></a>
 			<div class="theme_h1">
               <h1><strong>FAQs</strong></h1>  
             </div>
+            <br><br>
             <div class="accordion" id="accordionExample">
                 <div class="card bg-secondary">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
                         <i class="fas fa-question-circle"  style="color:white"></i>
                         <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <p>What's so special about your hack?</p>
+                            <p>The course will be offline or online?</p>
                     </button>
                     </h5>
                 </div>
             
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p> Backed by the experienced hacker’s core team, we aim to make this event an inclusive one for each
+                        <!-- <p> Backed by the experienced hacker’s core team, we aim to make this event an inclusive one for each
                             and every hacker out there. We are planning for special prizes and recognition for under-represented
                             communities in the world of tech!
-                        </p>
+                        </p> -->
+                        <p>The course will be live & online with easy doubt clearance.</p>
                     </div>
                 </div>
-                    </div>
+                </div>
                     <div class="card bg-dark">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                                 <i class="fas fa-question-circle" style="color:white"></i>
                                 <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <p>How big can a team be?</p>
+                                    <!-- <p>How big can a team be?</p> -->
+                                    <p>Which online platform will be used?</p>
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p>The minimum size is two and the maximum team size is four. However, lone wolves are also welcome.</p>
+                                <!-- <p>The minimum size is two and the maximum team size is four. However, lone wolves are also welcome.</p> -->
+                                <p>Microsoft Teams will be used for online classes. It is an open source software and freely available for every OS (Windows, macOS, Ubuntu, Android, iOS).</p>
                             </div>
                         </div>
                     </div>
                     <div class="card bg-secondary">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <i class="fas fa-question-circle" style="color:white"></i>
-                                <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <p>Who can participate?</p>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                    <p>Since it is a Student’s hackathon, only students in their under graduate and post graduate can participate.</p>
-                            </div>
-                        </div>
-                    </div>
-                <div class="card bg-dark">
                         <div class="card-header" id="headingFour">
                             <h5 class="mb-0">
                                 <i class="fas fa-question-circle" style="color:white"></i>
                                 <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                    <p>What is the last date for registration for HackBVICAM?</p>
+                                    <p>What is the duration of the course?</p>
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                             <div class="card-body">
-                                    <p>Last date to register is 10th March, 2020. </p>
+                                    <!-- <p>Last date to register is 10th March, 2020. </p> -->
+                                    <p>This is a 40 hour course starting from Saturday, August 8, 2020 to Saturday, September 12, 2020.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-secondary">
+                    <div class="card bg-dark">
                         <div class="card-header" id="headingFive">
                             <h5 class="mb-0">
                                 <i class="fas fa-question-circle" style="color:white"></i>
                                 <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                    <p>I am a newbie, can I hack?</p>
+                                    <p>Is it a weekly or weekend course?</p>
                                 </button>
                             </h5>
                         </div>
@@ -507,48 +659,63 @@
                             <div class="card-body">
 
                                     <p>
-                                        Of course you can! We at HackBVICAM ensure that no one is left behind during the hacking,
-                                        thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn
-                                        the best you can alongside having fun and experiencing what it feels to belong to a community.
+                                        This is a weekend course for the convenience of everyone. However, due to Independence Day a two hour class has been shifted to Monday, August 17, 2020 from 5:30pm to 7:30pm.
                                     </p>
                             </div>
                         </div>
                     </div>
-                <div class="card bg-dark">
-                        <div class="card-header" id="headingSix">
+
+                    <div class="card bg-secondary">
+                        <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <i class="fas fa-question-circle" style="color:white"></i>
-                                <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                    <p>Is there any registration fee?</p>
+                                <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p>Will we be able to build project after the course?</p>
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
-                                    <p>No registration fee. HackBVICAM provides a platform to showcase talent free of cost.</p>
+                                    <!-- <p>Since it is a Student’s hackathon, only students in their under graduate and post graduate can participate.</p> -->
+                                    <p>Yes, you will be learning how to build projects in the course and will be able to make your own projects as well.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-secondary">
+                
+                    <div class="card bg-dark">
                         <div class="card-header" id="headingSeven">
                             <h5 class="mb-0">
                                 <i class="fas fa-question-circle" style="color:white"></i>
                                 <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                                    <p>What if I don’t want to present my hack?</p>
+                                    <p>Will attendees be provided with a certificate?</p>
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                             <div class="card-body">
                                     <p>
-                                        Unfinished or unimpressive (so you think) projects should be presented anyway!
-                                        Presenting your hack gives you a chance to be proud of what you’ve done, and
-                                        a constructive perspective of where you should be headed next.
+                                        Yes, it is a certified course by BVICAM and all the attendees shall be given a certificate at the end.
                                     </p>
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-dark">
+
+                    <div class="card bg-secondary">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <i class="fas fa-question-circle" style="color:white"></i>
+                                <button class="btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                    <p>Are Internship opportunities provided?</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <p>Yes, Intership opportunities will be provided to selected best students.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="card bg-dark">
                         <div class="card-header" id="headingEight">
                             <h5 class="mb-0">
                                 <i class="fas fa-question-circle" style="color:white"></i>
@@ -635,31 +802,17 @@
                                     </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
             </div>
 
        </div>
 
-       <!-- Schedule -->
-       <a name="schedule"></a>
-       <div style="background-color: white; margin-top: 10%;">
-            <div class="container sponsors">
-                <!-- <a name="technologies"></a> -->
-				<div class="theme_h1"><br><br>
-              <h1><strong>Schedule</strong></h1> </div> <br><br>
-                
-				
-                <!-- </div> -->
-            </div>
-       </div>
-       
- 
        <!-- Coordinating Committee -->
        <div class="container">
             <a name="team"></a><br><br>
             <div class="theme_h1">
               <h1><strong>Co-ordinators</strong></h1>  </div>
-            <div class="row">
+            <!-- <div class="row"> -->
                 <!-- 1. -->
                 <!-- <div class="col-lg-3 mb-6">
                     <div class="cards">
@@ -718,7 +871,7 @@
 			</div> -->
 			<div class="row">
                 <!-- 5. -->
-                <div class="col-lg-3 mb-6">
+                <div class="col-lg-3 mb-3">
                     <div class="cards">
                         <div class="inner">
                             <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
@@ -732,7 +885,7 @@
                     </div>
                 </div>
                 <!-- 6. -->
-                <div class="col-lg-3 mb-6">
+                <div class="col-lg-3 mb-3">
                     <div class="cards">
                         <div class="inner">
                             <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
@@ -745,7 +898,7 @@
                     </div>
                 </div>
                 <!-- 7. -->
-                <div class="col-lg-3 mb-6">
+                <div class="col-lg-3 mb-3">
                     <div class="cards">
                         <div class="inner">
                             <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
@@ -753,17 +906,17 @@
                         </div>
                         
                         <div class="card-body mycard" >
-                            <p class="center" font-size="">Vanshikaa Gupta<br>+91-9555516638</br></p>
+                            <p class="center" font-size="">Vanshika Gupta<br>+91-9555516638</br></p>
                             <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
                         </div>
                     </div>
                 </div>
                 <!-- 8. -->
-                <div class="col-lg-3 mb-6">
+                <div class="col-lg-3 mb-3">
                     <div class="cards">
                         <div class="inner">
                             <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
-                            <img class="card-img-top co-or" src="includes/images/coordinators/saaim.JPG" alt="">
+                            <img class="card-img-top co-or" src="includes/images/coordinators/saaim.jpeg" alt="">
                         </div>
                         
                         <div class="card-body mycard" >
@@ -773,8 +926,93 @@
                     </div>
                 </div>
             </div>
+        <!-- </div> -->
+        <div class="row">
+            <div class="col-lg-3 mb-3">
+                <div class="cards">
+                    <div class="inner">
+                        <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
+                        <img class="card-img-top co-or" src="includes/images/coordinators/Sheena.jpeg" alt="">
+                    </div>
+                    
+                    <div class="card-body mycard" >
+                        <p class="center" font-size="">Sheena Narula<br>+91-9971638520</br></p>
+                        <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-3">
+                <div class="cards">
+                    <div class="inner">
+                        <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
+                        <img class="card-img-top co-or" src="includes/images/coordinators/tanya.jpeg" alt="">
+                    </div>
+                    
+                    <div class="card-body mycard" >
+                        <p class="center" font-size="">Tanya Gupta<br>+91-7982367411</br></p>
+                        <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-3">
+                <div class="cards">
+                    <div class="inner">
+                        <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
+                        <img class="card-img-top co-or" src="includes/images/coordinators/kunal.jpeg" alt="">
+                    </div>
+                    
+                    <div class="card-body mycard" >
+                        <p class="center" font-size="">Kunal Arora<br>+91-9717140577</br></p>
+                        <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-3">
+                <div class="cards">
+                    <div class="inner">
+                        <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
+                        <img class="card-img-top co-or" src="includes/images/coordinators/Sagar.jpg" alt="">
+                    </div>
+                    
+                    <div class="card-body mycard" >
+                        <p class="center" font-size="">Sagar Monga<br>+91-9871168742</br></p>
+                        <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
+                    </div>
+                </div>
+            </div>
         </div>
-       
+       <div class="row">
+            <div class="col-lg-3 mb-3" style="margin-left: 270px;">
+                <div class="cards">
+                    <div class="inner">
+                        <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
+                        <img class="card-img-top co-or" src="includes/images/coordinators/Mayank.jpeg" alt="">
+                    </div>
+                
+                    <div class="card-body mycard" >
+                        <p class="center" font-size="">Mayank Bhandari<br>+91-7530885817</br></p>
+                        <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-3">
+                <div class="cards">
+                    <div class="inner">
+                        <!-- <img class="card-img-top" src="https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif" alt=""> -->
+                        <img class="card-img-top co-or" src="includes/images/coordinators/divya.jpeg" alt="">
+                    </div>
+                    
+                    <div class="card-body mycard" >
+                        <p class="center" font-size="">Divya Aggarwal<br>+91-9818927127</br></p>
+                        <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, ipsam.</p> -->
+                    </div>
+                </div>
+            </div>
+       </div>
 
        <script src="includes/js/main.js" type="text/javascript"></script>
   
@@ -798,7 +1036,7 @@
                          <h4>
                             <span>Email:</span>
                              <small>
-                                 <a href="mailto:mca@bvicam.ac.in">hackathon@bvicam.in</a>
+                                 <a href="mailto:mca@bvicam.ac.in">nsc@bvicam.in</a>
                              </small>
                          </h4>
                          <h4>
@@ -825,21 +1063,24 @@
                     <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
                     <div class="mb-5 container " style=" text-align:center; color:white">
 
-                         <!-- <div class="social-info">
-                                <a href="https://www.facebook.com/hackbvicam/" target="_blank"><i
+                         <div class="social-info">
+                                <a href="https://www.facebook.com/BVICAMsNSC/" target="_blank"><i
                                         class="fab fa-facebook color:white"></i></a>
-                                <a href="https://www.instagram.com/hackbvicam" target="_blank"><i
+                                <a href="https://www.instagram.com/bvicamnsc/" target="_blank"><i
                                         class="fab fa-instagram color:white"></i></a>
-                                <a href="https://twitter.com/HBvicam" target="_blank"><i
-                                        class="fab fa-twitter color:white"></i></a>
-                                <a href="https://www.linkedin.com/events/6633051360424226816/?showRequesters=false" target="_blank"><i
+                                <!-- <a href="https://twitter.com/HBvicam" target="_blank"><i
+                                        class="fab fa-twitter color:white"></i></a> -->
+                                <a href="https://www.linkedin.com/events/bvicam-sprofessionaltrainingpro6691718339531722752/" target="_blank"><i
                                         class="fab fa-linkedin color:white"></i></a>
                             </div> 
-                     -->
+                    
                     </div>
         
                 </div>
             </div>
+            
+                <p style="text-align: center;">Designed and Developed by Nipun <a href="https://www.linkedin.com/in/nipun-miglani-6ba143169"><i class="fab fa-linkedin color:white"></i></a> and Mehak <a href="http://linkedin.com/in/mmehak-suri-2624321b2"><i class="fab fa-linkedin color:white"></i></a></p>
+            
             <div class="footer-copyright text-center py-3"> 
                 <p>© Copyright BVICAM 2020</p>
             </div>      
@@ -851,7 +1092,7 @@
         <script src="includes/bootstrap/bootstrap.min.js"></script>
 
         <!--Devfolio-->
-		<script>
+		<!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
 		let devfolioOptions = {
         buttonSelector: '#devfolio-apply-now',
@@ -872,6 +1113,6 @@
 			});
 		}
 	});
-	</script>
+	</script> -->
     </body>
 </html>
